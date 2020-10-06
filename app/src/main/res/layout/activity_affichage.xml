@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_histoire"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Listehistoire"
+    android:id="@+id/back"
+    >
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:visibility="visible"
+        android:id="@+id/table"
+        android:background="@drawable/bordure"
+        >
+        <TableRow>
+
+            <TextView
+                android:id="@+id/hist"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+
+        android:background="@drawable/arrow1"
+        android:id="@+id/prec"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+
+        android:background="@drawable/arrow"
+        android:id="@+id/suiv"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="top"
+        android:background="@drawable/button_back"
+        android:visibility="invisible"
+        android:id="@+id/forme"/>
+
+
+
+</FrameLayout>
